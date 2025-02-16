@@ -6,7 +6,7 @@
     <title>DASHBOARD</title>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
   </head>
-  <body>
+  <body class="bg-[#F6F9F9]">
     <div class="flex h-screen">
       <!-- side-nav -->
       <div class="w-1/5 bg-white p-4">
@@ -64,18 +64,67 @@
       <!-- end of side nav -->
       <!-- main-page -->
        
-      <div class="w-4/5 p-4 bg-white">
-        <div
-          class="flex items-center border border-gray-300 rounded-lg overflow-hidden p-2 w-60 bg-[#C6E0FF]"
-        >
-          <img src="images/search-icon.png" alt="Search" class="" />
-          <input
-            type="text"
-            placeholder="Search your"
-            class="px-4 outline-none text-[#1564BF]"
-          />
+    <div class="w-4/5">
+      <div class="flex justify-between bg-white p-4"> 
+        <div class="flex border-none rounded-lg gap-4 p-2 items-center bg-[#C6E0FF]">
+          <div>
+            <img src="images/search-icon.png" alt="">
+          </div>
+          <input class="text-[#1564BF]" type="text" placeholder="Search your">
+        </div>
+        <div class="flex gap-5 items-center">
+          <div class="bg-[#C6E0FF] rounded-full w-10 h-10 flex items-center justify-center">
+            <img src="images/bell.png" alt="">
+          </div>
+          <div>
+            <img src="images/img5.png" alt="">
+          </div>
+          <p class="font-bold">Venkatesh</p>
         </div>
       </div>
+      <!-- summary cards -->
+       <div class="flex justify-between m-6 gap-3"> 
+        <div class="flex p-5 items-center bg-white shadow-md gap-5 rounded-lg">
+          <div class="space-y-2">
+            <p class="text-[#064A9A] text-2xl">240</p>
+            <p class="text-[#1C1C1C] text-sm">Total Students</p>
+          </div>
+          <div>
+            <img src="images/student.png" alt="">
+          </div>
+        </div>
+        <div class="flex p-5 items-center bg-white shadow-md gap-5 rounded-lg">
+          <div class="space-y-2">
+            <p class="text-[#064A9A] text-2xl">40</p>
+            <p class="text-[#1C1C1C] text-sm">Total teachers</p>
+          </div>
+          <div>
+            <img src="images/teachers.png" alt="">
+          </div>
+        </div>
+        <div class="flex p-5 items-center bg-white shadow-md gap-5 rounded-lg">
+          <div class="space-y-2">
+            <p class="text-[#064A9A] text-2xl">520</p>
+            <p class="text-[#1C1C1C] text-sm">Total applications</p>
+          </div>
+          <div>
+            <img src="images/application.png" alt="">
+          </div>
+        </div>
+        <div class="flex p-5 items-center bg-white shadow-md gap-5 rounded-lg">
+          <div class="space-y-2">
+            <p class="text-[#064A9A] text-2xl">320</p>
+            <p class="text-[#1C1C1C] text-sm">Total admissions</p>
+          </div>
+          <div>
+            <img src="images/admission.png" alt="">
+          </div>
+        </div>
+       </div>
+       <!-- end of summary cards -->
+
+        
+      
       
       
       <!-- end of main page -->
