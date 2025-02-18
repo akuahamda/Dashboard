@@ -9,7 +9,7 @@
   <body class="bg-[#F6F9F9]">
     <div class="flex h-full">
       <!-- side-nav -->
-      <div class="w-1/5 bg-white p-4">
+      <div class="md:block md:w-1/5 md:bg-white md:p-4 hidden">
         <div class="flex gap-4">
           <div>
             <img src="images/3dicons.png" alt="" />
@@ -58,16 +58,18 @@
             </div>
             <a href="#">Manage Fee</a>
           </div>
+          
         </div>
+        
         <!--end of nav-links -->
       </div>
       <!-- end of side nav -->
       <!-- main-page -->
 
-      <div class="w-4/5">
+      <div class="md:w-4/5">
         <div class="flex justify-between bg-white p-4">
           <div
-            class="flex border-none rounded-lg gap-4 p-2 items-center bg-[#C6E0FF]"
+            class="md:flex border-none rounded-lg gap-4 p-2 items-center bg-[#C6E0FF] hidden"
           >
             <div>
               <img src="images/search-icon.png" alt="" />
@@ -89,22 +91,29 @@
             </div>
             <p class="font-bold">Venkatesh</p>
           </div>
+          <div class="md:hidden flex items-center">
+            <div class="md:hidden">
+              <img src="images/Icon.png" alt="" />
+            </div>
+          </div>
+          
         </div>
+        
         <!-- summary cards -->
-        <div class="flex justify-between m-6 gap-3">
+        <div class="flex flex-col justify-between md:flex-row m-6 md:gap-3 gap-4">
           <div
-            class="flex p-5 items-center bg-white shadow-md gap-5 rounded-lg"
+            class="flex p-5 md:items-center bg-white shadow-md gap-5 rounded-lg justify-between"
           >
             <div class="space-y-2">
-              <p class="text-[#064A9A] text-2xl">240</p>
-              <p class="text-[#1C1C1C] text-sm">Total Students</p>
+              <p class="text-[#064A9A] md:text-2xl">240</p>
+              <p class="text-[#1C1C1C] md:text-sm">Total Students</p>
             </div>
             <div>
               <img src="images/student.png" alt="" />
             </div>
           </div>
           <div
-            class="flex p-5 items-center bg-white shadow-md gap-5 rounded-lg"
+            class="flex p-5 md:items-center bg-white shadow-md gap-5 rounded-lg justify-between"
           >
             <div class="space-y-2">
               <p class="text-[#064A9A] text-2xl">40</p>
@@ -115,7 +124,7 @@
             </div>
           </div>
           <div
-            class="flex p-5 items-center bg-white shadow-md gap-5 rounded-lg"
+            class="flex p-5 md:items-center bg-white shadow-md gap-5 rounded-lg justify-between"
           >
             <div class="space-y-2">
               <p class="text-[#064A9A] text-2xl">520</p>
@@ -126,7 +135,7 @@
             </div>
           </div>
           <div
-            class="flex p-5 items-center bg-white shadow-md gap-5 rounded-lg"
+            class="flex p-5 md:items-center bg-white shadow-md gap-5 rounded-lg justify-between"
           >
             <div class="space-y-2">
               <p class="text-[#064A9A] text-2xl">320</p>
@@ -140,10 +149,10 @@
 
         <!-- card -->
         <!-- test-grid -->
-        <div class="flex gap-4 justify-center p-5">
+        <div class="flex md:flex-row flex-col gap-4 justify-center p-5">
           <!-- First Column -->
-          <div class="flex flex-col gap-4 w-1/2">
-            <div class="h-auto bg-white rounded-lg p-4 space-y-5">
+          <div class="flex md:flex-col gap-4 w-1/2">
+            <div class="md:h-auto bg-white rounded-lg p-4 space-y-5">
               <p>Fee Detail</p>
               <div class="flex items-center w-full gap-8">
                 <div><img src="images/chat.png" alt="" /></div>
@@ -172,10 +181,14 @@
             <!-- Top Image (Shorter) -->
             <div class="h-auto bg-white rounded-lg p-5 space-y-3">
               <p>Inventory Details</p>
-              <div class="flex flex-col gap-3">
-                <div class="flex justify-between items-center p-2 border border-gray-100 rounded-md">
-                  <div class="rounded-sm bg-[#E0E9FF] w-10 h-10 flex items-center justify-center">
-                    <img src="images/text-book.png" alt="">
+              <div class="flex flex-col gap-3 text-sm">
+                <div
+                  class="flex justify-between items-center p-2 border border-gray-100 rounded-md"
+                >
+                  <div
+                    class="rounded-sm bg-[#E0E9FF] w-10 h-10 flex items-center justify-center"
+                  >
+                    <img src="images/text-book.png" alt="" />
                   </div>
                   <div>
                     <p>Test Books</p>
@@ -183,51 +196,69 @@
                   </div>
                   <div>price: <span class="text-[#2E8EFF]">$30,000</span></div>
                   <div>
-                    <img src="images/arrow.png" alt="">
+                    <img src="images/arrow.png" alt="" />
                   </div>
                 </div>
                 <div>
-                  <div class="flex justify-between items-center p-2 border border-gray-100 rounded-md">
-                    <div class="rounded-sm bg-[#E0E9FF] w-10 h-10 flex items-center justify-center">
-                      <img src="images/uniform.png" alt="">
+                  <div
+                    class="flex justify-between items-center p-2 border border-gray-100 rounded-md"
+                  >
+                    <div
+                      class="rounded-sm bg-[#E0E9FF] w-10 h-10 flex items-center justify-center"
+                    >
+                      <img src="images/uniform.png" alt="" />
                     </div>
                     <div>
                       <p>Uniform</p>
                       <p class="text-[#2E8EFF]">6th-10th</p>
                     </div>
-                    <div>price: <span class="text-[#2E8EFF]">$30,000</span></div>
                     <div>
-                      <img src="images/arrow.png" alt="">
+                      price: <span class="text-[#2E8EFF]">$30,000</span>
+                    </div>
+                    <div>
+                      <img src="images/arrow.png" alt="" />
                     </div>
                   </div>
                 </div>
                 <div>
-                  <div class="flex justify-between items-center p-2 border border-gray-100 rounded-md">
-                    <div class="rounded-sm bg-[#E0E9FF] w-10 h-10 flex items-center justify-center">
-                      <img src="images/board.png" alt="">
+                  <div
+                    class="flex justify-between items-center p-2 border border-gray-100 rounded-md"
+                  >
+                    <div
+                      class="rounded-sm bg-[#E0E9FF] w-10 h-10 flex items-center justify-center"
+                    >
+                      <img src="images/board.png" alt="" />
                     </div>
                     <div>
                       <p>Boards</p>
                       <p class="text-[#2E8EFF]">6th-10th</p>
                     </div>
-                    <div>price: <span class="text-[#2E8EFF]">$30,000</span></div>
                     <div>
-                      <img src="images/arrow.png" alt="">
+                      price: <span class="text-[#2E8EFF]">$30,000</span>
+                    </div>
+                    <div>
+                      <img src="images/arrow.png" alt="" />
                     </div>
                   </div>
                 </div>
                 <div>
-                  <div class="flex justify-between items-center p-2 border border-gray-100 rounded-md">
-                    <div class="rounded-sm bg-[#E0E9FF] w-10 h-10 flex items-center justify-center">
-                      <img src="images/card.png" alt="">
+                  <div
+                    class="flex justify-between items-center p-2 border border-gray-100 rounded-md"
+                  >
+                    <div
+                      class="rounded-sm bg-[#E0E9FF] w-10 h-10 flex items-center justify-center"
+                    >
+                      <img src="images/card.png" alt="" />
                     </div>
                     <div>
                       <p>ID Cards</p>
                       <p class="text-[#2E8EFF]">6th-10th</p>
                     </div>
-                    <div>price: <span class="text-[#2E8EFF]">$30,000</span></div>
                     <div>
-                      <img src="images/arrow.png" alt="">
+                      price: <span class="text-[#2E8EFF]">$30,000</span>
+                    </div>
+                    <div>
+                      <img src="images/arrow.png" alt="" />
                     </div>
                   </div>
                 </div>
@@ -260,13 +291,44 @@
                   </div>
                   <div></div>
                 </div>
-                <div> 
-                  <img src="images/Chart.png" alt="">
+                <div>
+                  <img src="images/Chart.png" alt="" />
                 </div>
               </div>
             </div>
             <!-- Top Image (Longer) -->
-            <div class="h-32 bg-white rounded-lg"></div>
+            <div class="h-auto justify-between flex">
+              <div class="bg-white p-4 rounded-lg shadow-md space-y-5">
+                <h3 class="text-gray-700 font-semibold">Transport Details</h3>
+                <div class="p-2 border border-gray-100 rounded-md">
+                  <p class="text-sm">Bus Users</p>
+                  <p class="text-blue-600 text-2xl font-bold text-center">
+                    120
+                  </p>
+                </div>
+                <div class="p-2 border border-gray-100 rounded-md">
+                  <p class="text-sm">Bus fee paid students</p>
+                  <p class="text-blue-600 text-2xl font-bold text-center">58</p>
+                </div>
+              </div>
+
+              <div
+                class="bg-gradient-to-r from-blue-500 to-blue-700 text-white p-4 rounded-lg shadow-md relative"
+              >
+                <div class="flex justify-between">
+                  <h3 class="text-lg font-semibold">Children Day</h3>
+                  <div>
+                    <img src="images/blue-arrow.png" alt="" />
+                  </div>
+                </div>
+                <p class="text-sm">14th Nov</p>
+                <img
+                  src="images/Women and children dancing at the party.png"
+                  alt=""
+                  class=""
+                />
+              </div>
+            </div>
             <!-- Bottom Image (Shorter) -->
           </div>
         </div>
